@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Dynamic CSS" icon-name="custom:custom14">
+        <div class="slds-var-p-around_small">
+            <p class={pColor}>Welcome to tech journey with ANkit Jain</p>
+        </div>
+        <div class="slds-var-p-around_small">
+            <lightning-button class="slds-var-p-around_small" label="Add Css" onclick={addCssHandler}
+                variant="brand"></lightning-button>
+            <lightning-button class="slds-var-p-around_small" label="Remove Css" onclick={removeCssHandler}
+                variant="brand"></lightning-button>
+            <lightning-button class="slds-var-p-around_small" label="Toggle Css" onclick={toggleCssHandler}
+                variant="brand"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

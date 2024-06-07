@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Load Premitive Array" icon-name="custom:custom14">
+        <div class="slds-var-p-around_small">
+            <template for:each={superStars} for:item="star">
+                <p key={star}>{star}</p>
+            </template>
+            <lightning-card title="Load Complex Object" icon-name="custom:custom14" class="slds-m-top_medium">
+                <div class="slds-var-p-around_small">
+                    <ul>
+                        <template for:each={contactList} for:item="contact">
+                            <li key={contact.id}>
+                                <p>{contact.fname} : {contact.lname}</p>
+                                <template if:true={contact.detail}>
+                                    <p>Age: {contact.detail.age}</p>
+                                    <p>Pin: {contact.detail.pin}</p>
+                                </template>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </lightning-card>
+
+            <lightning-card title="Load Complex Object: Iterator" icon-name="custom:custom14">
+                <div class="slds-var-p-around_small">
+                    <template iterator:it={contactList}>
+                        <ul key={it.value.id}>
+                            <li>
+                                <p lwc:if={it.first} class="slds-border_bottom"></p>
+                                {it.value.fname}
+                                <p lwc:if={it.last} class="slds-border_top"></p>
+                                {it.value.lname}
+                            </li>
+                        </ul>
+                    </template>
+                </div>
+            </lightning-card>
+
+        </div>
+    </lightning-card>
+</template>

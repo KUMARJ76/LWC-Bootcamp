@@ -1,0 +1,6 @@
+@import "c/cssLibrary";
+h1{
+    color: var(--c-myBackgroundColor);
+    font-size: var(--c-myFontSize);
+    
+}

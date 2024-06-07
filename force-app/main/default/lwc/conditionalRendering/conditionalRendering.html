@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-p-around_small">
+            <lightning-input type="checkbox" label="Display Message" name="input1"
+                onchange={changeHandler}></lightning-input>
+        </div>
+        <div class="slds-var-p-around_small">
+            <template lwc:if={displayMessage}>
+                <p>Welcome to learn LWC from Tech Journey with Ankit Jain</p>
+            </template>
+            <template lwc:else>
+                <p>You are not authorized to see the message </p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
