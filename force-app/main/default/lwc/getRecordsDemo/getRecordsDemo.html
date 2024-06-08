@@ -1,8 +1,8 @@
 <template>
     <lightning-card title="Get Records from uiRecordApi wire adapter">
         <template lwc:if={outputs}>
-            <template for:each={outputs} for:item="item">
-                <p key={item.result.fields.id}>{item.result.fields.Name.value}</p>
+            <template for:each={outputs.results} for:item="item">
+                <p key={item.result.id}>{item.result.fields.Name.value}</p>
             </template>
         </template>
     </lightning-card>
