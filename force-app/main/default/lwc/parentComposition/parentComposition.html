@@ -1,0 +1,14 @@
+<template>
+    <p>I am a Parent Component</p>
+    <div onfire={handleDivFire} class="slds-var-p-around_small">
+        <c-child-composition onfire={handleChildFire}></c-child-composition>
+    </div>
+</template>
+
+<!-- bubbles:false,composed:false then handleChildFire method will get called 
+ bubbles:true ,composed:false then handleChildFire & handleDivFire  methods will get called
+ bubbles:true ,composed:true then handleChildFire & handleDivFire also grandParent method named as "handleParentEvent" methods will get called
+
+ bubbles:false ,composed:true  not supported
+ 
+-->
