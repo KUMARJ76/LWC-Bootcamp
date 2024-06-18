@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title="Third Party Css" icon-name="custom:custom14">
+        <div class="slds-var-p-around_small">
+            <p class=" animate__bounce animate__delay-5s">
+                {userName}
+            </p>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Third Party Js" icon-name="custom:custom14">
+        <div class="slds-var-p-around_small">
+            <p class="slds-text-heading_small ">
+                { displayDate}
+            </p>
+        </div>
+    </lightning-card>
+    <lightning-card title="Check Permission">
+        <div class="slds-var-p-around_small">
+            <template lwc:if={checkPermission}>
+                <p>You are authorized to view the message</p>
+            </template>
+            <template lwc:else>
+                <p>You are not authorized to view the message</p>
+            </template>
+        </div>
+    </lightning-card>
+    <div class="slds-var-p-around_small">
+        <lightning-card title="Get Current User Id">
+            <p>{userName}</p>
+        </lightning-card>
+    </div>
+    <lightning-card title="Custom Label">
+        <div class="slds-var-p-around_small">
+            <p class="slds-text-heading_medium">{label.greeting}</p>
+            <p class="slds-text-heading_medium">{label.salesforcePlatform}</p>
+        </div>
+    </lightning-card>
+    <lightning-card title="Sataic resource Demo">
+        <div class="slds-var-p-around_small">
+            <img src={myLogo} alt="Logo"/>
+            <img src={assetLogo} alt="Logo"/>
+        </div>       
+    </lightning-card>
+    
+</template>
