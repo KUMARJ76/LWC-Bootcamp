@@ -1,0 +1,3 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId">
+ <c:calculator recordId="{!v.recordId}"></c:calculator>
+</aura:component>	
