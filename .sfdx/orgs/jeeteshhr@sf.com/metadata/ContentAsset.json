@@ -1,0 +1,18 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0055g00000IxHKhAAN",
+      "createdByName": "Jeetesh Kumar",
+      "createdDate": "2024-06-17T16:29:34.000Z",
+      "fileName": "contentassets/salesforce_logo.asset",
+      "fullName": "salesforce_logo",
+      "id": "03SJ100000000PGMAY",
+      "lastModifiedById": "0055g00000IxHKhAAN",
+      "lastModifiedByName": "Jeetesh Kumar",
+      "lastModifiedDate": "2024-06-17T16:29:34.000Z",
+      "manageableState": "unmanaged",
+      "type": "ContentAsset"
+    }
+  ]
+}

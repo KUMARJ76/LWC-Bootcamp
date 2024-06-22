@@ -1,0 +1,2144 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recordset Filter Criteria Rule ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Recordset Filter Criteria Rule Number",
+      "name": "RecordsetFilterCriteriaRuleNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recordset Filter Criteria ID",
+      "name": "RecordsetFilterCriteriaId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordsetFilterCriteria"
+      ],
+      "relationshipName": "RecordsetFilterCriteria",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Criteria Field",
+      "name": "CriteriaField",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment ID",
+          "validFor": null,
+          "value": "ServiceAppointment.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serial Number",
+          "validFor": null,
+          "value": "Asset.SerialNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle Member",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundleMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle Start Date",
+          "validFor": null,
+          "value": "Asset.LifecycleStartDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle-managed asset",
+          "validFor": null,
+          "value": "Asset.HasLifecycleManagement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle End Date",
+          "validFor": null,
+          "value": "Asset.LifecycleEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Total Lifecycle Amount",
+          "validFor": null,
+          "value": "Asset.TotalLifecycleAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Root Asset ID",
+          "validFor": null,
+          "value": "Asset.RootAssetId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location ID",
+          "validFor": null,
+          "value": "Asset.LocationId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "Asset.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price",
+          "validFor": null,
+          "value": "Asset.Price"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Bundle ID",
+          "validFor": null,
+          "value": "ServiceAppointment.RelatedBundleId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Competitor Asset",
+          "validFor": null,
+          "value": "Asset.IsCompetitorProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "Asset.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Lifecycle End Date",
+          "validFor": null,
+          "value": "Asset.CurrentLifecycleEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Amount",
+          "validFor": null,
+          "value": "Asset.CurrentAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Monthly Recurring Revenue",
+          "validFor": null,
+          "value": "Asset.CurrentMrr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Quantity",
+          "validFor": null,
+          "value": "Asset.CurrentQuantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchase Date",
+          "validFor": null,
+          "value": "Asset.PurchaseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "Asset.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "Asset.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "Asset.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type ID",
+          "validFor": null,
+          "value": "ServiceAppointment.WorkTypeId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "Asset.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "Asset.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage End Date",
+          "validFor": null,
+          "value": "Asset.UsageEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "Asset.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Asset",
+          "validFor": null,
+          "value": "Asset.IsInternal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "Asset.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "ServiceAppointment.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "Asset.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manually Bundled",
+          "validFor": null,
+          "value": "ServiceAppointment.IsManuallyBundled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner ID",
+          "validFor": null,
+          "value": "Asset.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product ID",
+          "validFor": null,
+          "value": "Asset.Product2Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Asset.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent Asset ID",
+          "validFor": null,
+          "value": "Asset.ParentId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantity",
+          "validFor": null,
+          "value": "Asset.Quantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "Asset.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "Asset.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "Asset.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset ID",
+          "validFor": null,
+          "value": "Asset.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Serviced By ID",
+          "validFor": null,
+          "value": "Asset.AssetServicedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Provided By ID",
+          "validFor": null,
+          "value": "Asset.AssetProvidedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Name",
+          "validFor": null,
+          "value": "Asset.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Install Date",
+          "validFor": null,
+          "value": "Asset.InstallDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Postal Code",
+          "validFor": null,
+          "value": "Asset.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Number",
+          "validFor": null,
+          "value": "ServiceAppointment.AppointmentNumber"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Equals",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Operator",
+      "name": "Operator",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Equals",
+          "validFor": null,
+          "value": "Equals"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Greater than",
+          "validFor": null,
+          "value": "GreaterThan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Greater than or equal",
+          "validFor": null,
+          "value": "GreaterOrEqual"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Less than",
+          "validFor": null,
+          "value": "LessThan"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Less than or equal",
+          "validFor": null,
+          "value": "LessOrEqual"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Value",
+      "name": "Value",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Criteria",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recordset Filter Criteria Type",
+      "name": "Type",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Criteria",
+          "validFor": null,
+          "value": "Criteria"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage",
+          "validFor": null,
+          "value": "Usage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage(Duration)",
+          "validFor": null,
+          "value": "UsageDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage(Counter)",
+          "validFor": null,
+          "value": "UsageCounter"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Set the start value. To determine if the rule is true, this value is compared to the Usage Field value.",
+      "label": "First Occurrence",
+      "name": "FirstOccurrence",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Occurrence",
+      "name": "LastOccurrence",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Set the frequency of maintenance. For example if this field is “1000”, this will schedule at every 1000 increments. This can either be a positive value for an incrementing Usage Field, or a negative value for a decreasing Usage Field.",
+      "label": "Frequency",
+      "name": "Frequency",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "This field’s value is compared to the Usage Field to determine if the rule is true.",
+      "label": "Next Occurrence Field",
+      "name": "NextOccurrenceField",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment ID",
+          "validFor": null,
+          "value": "ServiceAppointment.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serial Number",
+          "validFor": null,
+          "value": "Asset.SerialNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle Member",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundleMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle Start Date",
+          "validFor": null,
+          "value": "Asset.LifecycleStartDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle-managed asset",
+          "validFor": null,
+          "value": "Asset.HasLifecycleManagement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle End Date",
+          "validFor": null,
+          "value": "Asset.LifecycleEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Total Lifecycle Amount",
+          "validFor": null,
+          "value": "Asset.TotalLifecycleAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Root Asset ID",
+          "validFor": null,
+          "value": "Asset.RootAssetId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location ID",
+          "validFor": null,
+          "value": "Asset.LocationId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "Asset.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price",
+          "validFor": null,
+          "value": "Asset.Price"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Bundle ID",
+          "validFor": null,
+          "value": "ServiceAppointment.RelatedBundleId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Competitor Asset",
+          "validFor": null,
+          "value": "Asset.IsCompetitorProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "Asset.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Lifecycle End Date",
+          "validFor": null,
+          "value": "Asset.CurrentLifecycleEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Amount",
+          "validFor": null,
+          "value": "Asset.CurrentAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Monthly Recurring Revenue",
+          "validFor": null,
+          "value": "Asset.CurrentMrr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Quantity",
+          "validFor": null,
+          "value": "Asset.CurrentQuantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchase Date",
+          "validFor": null,
+          "value": "Asset.PurchaseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "Asset.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "Asset.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "Asset.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type ID",
+          "validFor": null,
+          "value": "ServiceAppointment.WorkTypeId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "Asset.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "Asset.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage End Date",
+          "validFor": null,
+          "value": "Asset.UsageEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "Asset.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Asset",
+          "validFor": null,
+          "value": "Asset.IsInternal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "Asset.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "ServiceAppointment.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "Asset.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manually Bundled",
+          "validFor": null,
+          "value": "ServiceAppointment.IsManuallyBundled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner ID",
+          "validFor": null,
+          "value": "Asset.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product ID",
+          "validFor": null,
+          "value": "Asset.Product2Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Asset.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent Asset ID",
+          "validFor": null,
+          "value": "Asset.ParentId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantity",
+          "validFor": null,
+          "value": "Asset.Quantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "Asset.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "Asset.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "Asset.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset ID",
+          "validFor": null,
+          "value": "Asset.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Serviced By ID",
+          "validFor": null,
+          "value": "Asset.AssetServicedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Provided By ID",
+          "validFor": null,
+          "value": "Asset.AssetProvidedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Name",
+          "validFor": null,
+          "value": "Asset.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Install Date",
+          "validFor": null,
+          "value": "Asset.InstallDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Postal Code",
+          "validFor": null,
+          "value": "Asset.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Number",
+          "validFor": null,
+          "value": "ServiceAppointment.AppointmentNumber"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "Index in the Recordset Filter Criteria Rule",
+      "label": "Index",
+      "name": "Index",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "This field stores the daily usage rate of the asset. The unit for the usage rate must be per day.",
+      "label": "Usage Rate Field",
+      "name": "UsageRateField",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Offsite Appointment",
+          "validFor": null,
+          "value": "ServiceAppointment.IsOffsiteAppointment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Appointment ID",
+          "validFor": null,
+          "value": "ServiceAppointment.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Serial Number",
+          "validFor": null,
+          "value": "Asset.SerialNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled Start",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Scheduled End",
+          "validFor": null,
+          "value": "ServiceAppointment.SchedEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Territory ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ServiceTerritoryId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bundle Member",
+          "validFor": null,
+          "value": "ServiceAppointment.IsBundleMember"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle Start Date",
+          "validFor": null,
+          "value": "Asset.LifecycleStartDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle-managed asset",
+          "validFor": null,
+          "value": "Asset.HasLifecycleManagement"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lifecycle End Date",
+          "validFor": null,
+          "value": "Asset.LifecycleEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Total Lifecycle Amount",
+          "validFor": null,
+          "value": "Asset.TotalLifecycleAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Root Asset ID",
+          "validFor": null,
+          "value": "Asset.RootAssetId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Location ID",
+          "validFor": null,
+          "value": "Asset.LocationId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "Asset.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Latitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Latitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Price",
+          "validFor": null,
+          "value": "Asset.Price"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Related Bundle ID",
+          "validFor": null,
+          "value": "ServiceAppointment.RelatedBundleId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Due Date",
+          "validFor": null,
+          "value": "ServiceAppointment.DueDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Earliest Start Permitted",
+          "validFor": null,
+          "value": "ServiceAppointment.EarliestStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Competitor Asset",
+          "validFor": null,
+          "value": "Asset.IsCompetitorProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "Asset.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Longitude",
+          "validFor": null,
+          "value": "ServiceAppointment.Longitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "ServiceAppointment.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Lifecycle End Date",
+          "validFor": null,
+          "value": "Asset.CurrentLifecycleEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Amount",
+          "validFor": null,
+          "value": "Asset.CurrentAmount"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Monthly Recurring Revenue",
+          "validFor": null,
+          "value": "Asset.CurrentMrr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Current Quantity",
+          "validFor": null,
+          "value": "Asset.CurrentQuantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchase Date",
+          "validFor": null,
+          "value": "Asset.PurchaseDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "Asset.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Country",
+          "validFor": null,
+          "value": "ServiceAppointment.Country"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "Asset.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "Asset.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Modified Date",
+          "validFor": null,
+          "value": "ServiceAppointment.LastModifiedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Work Type ID",
+          "validFor": null,
+          "value": "ServiceAppointment.WorkTypeId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "Asset.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created By ID",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "Asset.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created Date",
+          "validFor": null,
+          "value": "ServiceAppointment.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Usage End Date",
+          "validFor": null,
+          "value": "Asset.UsageEndDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "Asset.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "ServiceAppointment.City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual End",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Actual Duration (Minutes)",
+          "validFor": null,
+          "value": "ServiceAppointment.ActualDuration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Asset",
+          "validFor": null,
+          "value": "Asset.IsInternal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "Asset.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Account ID",
+          "validFor": null,
+          "value": "ServiceAppointment.AccountId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "Asset.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contact ID",
+          "validFor": null,
+          "value": "ServiceAppointment.ContactId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Manually Bundled",
+          "validFor": null,
+          "value": "ServiceAppointment.IsManuallyBundled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner ID",
+          "validFor": null,
+          "value": "Asset.OwnerId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration",
+          "validFor": null,
+          "value": "ServiceAppointment.Duration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration in Minutes",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationInMinutes"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Duration Type",
+          "validFor": null,
+          "value": "ServiceAppointment.DurationType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Product ID",
+          "validFor": null,
+          "value": "Asset.Product2Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "Asset.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status",
+          "validFor": null,
+          "value": "ServiceAppointment.Status"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Status Category",
+          "validFor": null,
+          "value": "ServiceAppointment.StatusCategory"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Parent Asset ID",
+          "validFor": null,
+          "value": "Asset.ParentId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantity",
+          "validFor": null,
+          "value": "Asset.Quantity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "Asset.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Geocode Accuracy",
+          "validFor": null,
+          "value": "ServiceAppointment.GeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "Asset.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "ServiceAppointment.Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "Asset.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State/Province",
+          "validFor": null,
+          "value": "ServiceAppointment.State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window Start",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowStartTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Arrival Window End",
+          "validFor": null,
+          "value": "ServiceAppointment.ArrivalWindowEndTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset ID",
+          "validFor": null,
+          "value": "Asset.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Serviced By ID",
+          "validFor": null,
+          "value": "Asset.AssetServicedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Provided By ID",
+          "validFor": null,
+          "value": "Asset.AssetProvidedById"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asset Name",
+          "validFor": null,
+          "value": "Asset.Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Install Date",
+          "validFor": null,
+          "value": "Asset.InstallDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Postal Code",
+          "validFor": null,
+          "value": "Asset.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip/Postal Code",
+          "validFor": null,
+          "value": "ServiceAppointment.PostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Appointment Number",
+          "validFor": null,
+          "value": "ServiceAppointment.AppointmentNumber"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Day",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "This enum value that define different options for Usage Rate Field.",
+      "label": "Usage Rate Unit",
+      "name": "UsageRateUnit",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Day",
+          "validFor": null,
+          "value": "Day"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Recordset Filter Criteria Rule",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "RecordsetFilterCriteriaRule",
+  "queryable": true
+}
